@@ -5,10 +5,10 @@ API implementation to demonstrate secure coding practices. Written in Nodejs/Exp
 ### Endpoints
 
   - **/api:** base path. All API endpoints paths start here
-  - **/api/signup:** An unprotected route. User supplies the following FirstName(fname), LastName(lname), Username(username), Password(password), SecretAnswer(secret) which are stored in the database
-  - **/api/signin:** Unprotected route. User supplies username and password which are queried against the db. If successful, a session is created with the username and generated token attached to it and stored in the database
-  - **/api/userdetails/:user:** Protected route. User supplies the username and password which is verified against the session token
-  - **/api/signout:** Protected resource. User session is destroyed and cleared from the session store
+  - ** POST /api/signup** An unprotected route. User supplies the following FirstName(fname), LastName(lname), Username(username), Password(password), SecretAnswer(secret) which are stored in the database
+  - **POST /api/signin:** Unprotected route. User supplies username and password which are queried against the db. If successful, a session is created with the username and generated token attached to it and stored in the database
+  - **GET /api/userdetails/:user:** Protected route. User supplies the username and password which is verified against the session token
+  - **POST /api/signout:** Protected resource. User session is destroyed and cleared from the session store
 
 
 ### Key Files
